@@ -1,0 +1,113 @@
+.questions {
+ margin-top: 150px;
+
+}
+
+.questions__content {
+margin-top: 80px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.questions__cards {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+position: relative;
+}
+
+.questions__cards:after {
+    content: "";
+    background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, #191919 100%);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 275px;
+    bottom: 0;
+    left: 0;
+
+}
+
+
+.questions__card {
+display: flex;
+flex-direction: column;
+opacity: 1;
+border-radius: 14px;
+padding: 50px;
+border:  1px solid var(--color-grey-15);
+width: calc(50% - 15px);
+background-color: rgba(25, 25, 25, 0)
+
+}
+
+
+.questions__card h3{ 
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+margin-bottom: 30px;
+color: var(--color-white); 
+border-bottom: 1px solid var(--color-grey-15);
+padding-bottom: 30px;
+}
+
+
+.questions__text{
+font-weight: 300;
+font-style: Light;
+font-size: 18px;
+line-height: 150%;
+letter-spacing: 0%;
+color: var(--color-grey-70);
+
+}
+
+@media screen  and  (max-width:768px) {
+    
+    .questions__content {
+        margin-top: 50px;
+    }
+
+    .questions__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    
+    .questions__card  {
+        width: 100%;
+        
+    }
+
+    .questions__card h3 {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        font-family: Lexend;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+    .questions__text {
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        font-weight: 300;
+
+    }
+}
+
+
+
+
+
+макет за 30 мниут  скинуть
+Доделать верстку ВСЕ СЕКЦИИ афтер градиент 
+настроить гит и подклдючить гитхаб
+

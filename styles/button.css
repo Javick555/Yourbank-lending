@@ -1,0 +1,54 @@
+.button {
+    max-width: max-content;
+    background-color: var(--color-green-60);
+    border-radius: 82px;
+    gap: 10px;
+    display: flex;
+    width: 157;
+    padding: 16px 30px;
+    margin: 50px 50px;
+    font-family: Lexend;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--color-grey-11);
+}
+
+.open-button  {
+    width: 193px;
+height: 63px;
+opacity: 1;
+gap: 4px;
+border-radius: 100px;
+border: 1px solid var(--color-grey-15);
+padding-top: 18px;
+padding-right: 24px;
+padding-bottom: 18px;
+padding-left: 24px;
+color: var(--color-white);
+background-color: var(--color-grey-11);
+transition: border 0.6s ease;
+cursor: pointer;
+display: flex;
+text-align: center;
+
+}
+
+.open-button:hover {
+border-color: var(--color-white);
+}
+
+.open-button:active {
+border-color: var(--color-green-60);
+}
+
+
+@media screen and (max-width:768px) {
+    .open-button  {
+    width: 155px;
+    height: 49px;
+    padding: 14px 20px;
+
+}
+}

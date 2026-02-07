@@ -1,0 +1,19 @@
+
+.openings {
+    margin-top: 150px;
+}
+
+
+.openings__cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 80px;
+}
+
+
+
+@media screen  and  (max-width:768px) {
+    
+}

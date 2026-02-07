@@ -1,0 +1,48 @@
+.top {
+gap: 14px;
+display: flex;
+padding-right: 300px;
+flex-direction: column;
+
+}
+
+.top__title {
+font-weight: 500;
+font-size: 48px;
+line-height: 150%;
+color: var(--white);
+/* width: 100%; */
+}
+
+.top__title-text.--color-green {
+    color: var(--color-green-60);
+}
+
+
+
+
+.top__text {   
+font-weight: 300;
+font-size: 18px;
+line-height: 150%;
+color: var(--color-grey-70);
+
+}
+
+@media screen and (max-width:961px){
+
+    .top{
+        padding: 0;
+    }
+
+    .top__text {
+        text-align: center;
+        font-size: 14px;
+    }
+
+.top__title
+{
+    font-size: 28px;
+    text-align: center;
+}
+    }

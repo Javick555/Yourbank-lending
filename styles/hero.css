@@ -1,0 +1,133 @@
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+.hero {
+    margin-top: 53px;
+}
+
+.hero__content {
+    padding: 50px 50px;
+    border-radius: 20px;
+    position: relative;
+    background-color: var(--color-green-60);
+    height: 816px;
+}
+
+.hero__content::before {
+    content: "";
+    background-image: url(/images/Kartinka.svg);
+    width: 505px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+}
+
+.hero__text {
+    padding: 80px;
+    gap: 23px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 20px;
+    max-width: 791px;
+    background: var(--color-grey-10);
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    animation: slideFromLeft 1s ease;
+}
+
+.hero__title-text {
+    color: white;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 130%;
+    letter-spacing: 0;
+}
+
+.hero__title-text--accent {
+    color: var(--color-green-60);
+}
+
+
+.hero__image {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 2;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        margin: 30px 0;
+    }
+
+    .hero__image {
+        top: 14px;
+        right: 14px;
+        left: 14px;
+    }
+
+    .hero__image-photo {
+        width: 100%;
+        height: 253px;
+        border-radius: 16px;
+        z-index: 2;
+        object-fit: contain;
+        object-position: center;
+
+    }
+
+    .hero__content::before {
+        width: 199px;
+        height: 189px;
+        background-size: contain;
+
+    }
+
+    .hero__content {
+        padding: 188px 14px 14px;
+        height: max-content;
+    }
+
+    .hero__text {
+        width: 100%;
+        border-radius: 20px;
+        padding: 24px;
+        gap: 14px;
+
+    }
+
+    .hero__title {
+        text-align: center;
+    }
+
+    .hero__title-text {
+        font-size: 28px;
+        line-height: 130%;
+        text-align: center;
+    }
+
+    .hero__description {
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        border-radius: 20px;
+        letter-spacing: 0;
+    }
+}
